@@ -117,16 +117,7 @@ const Canvas = (
     }
     //télécharger l'image
     const dowload = (canvas) =>  {
-        /*if(window.navigator.msSaveBlob) {
-            window.navigator.msSaveBlob (canvas.msToBlob(),"dessin.png");
-        } else {
-            const a = document.createElement ("a");
-            document.body.appendChild (a);
-            a.href =  canvas.toDataURL ();
-            a.download = "dessin.png";
-            a.click ();
-            document.body.removeChild (a);
-        }*/
+        
         const image = canvas.toDataURL('image/png');
         console.log (image);
         const link = document.createElement("a");
