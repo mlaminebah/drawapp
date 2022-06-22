@@ -1,0 +1,77 @@
+
+.plus,.moins {
+    display: inline-block;
+}
+.color-palette {
+    height: 41px;
+    width: 41px;
+    min-height: 41px;
+    min-width: 41px;
+    
+    display: inline-block;
+    
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 2px solid rgb(163, 97, 97);
+
+}
+
+.paint {
+    margin: 0 auto;
+    max-width: 700px;
+    width: 645px;
+    height: 395px;
+
+}
+body {
+    background-color: aqua;
+}
+
+ .choice {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background: #ddd;
+    padding: 0px 10px;
+}
+ .type, 
+ .size,
+ .color,
+ .actions {
+    margin: 0px 10px;
+}
+ .type input {
+    display: none;
+}
+ .type label {
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    
+}
+ .type input:checked + label {
+    background:black;
+    color: white;
+    border-radius: 50%;
+}
+.type label,
+.size div,
+.actions span {
+    margin: 0px 2px;
+}
+.actions {
+    flex: 1;
+    text-align: right;
+}
+ .actions span,
+ .type label,
+.color-palette,
+ .size div
+{
+    cursor: pointer;
+}
+.canvas {
+    background-color: white;
+}
